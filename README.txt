@@ -1,25 +1,22 @@
-THE GREAT KARJAT HEIST — STATIC WEBSITE PACKAGE
+THE GREAT KARJAT HEIST — UPDATED WEBSITE
 
 Files:
-- index.html: complete mobile-friendly game website
-- README.txt: publishing and setup instructions
-- QR_CARDS_TEMPLATE.pdf: printable station QR setup worksheet (QR links are placeholders until you publish)
+- index.html: player-facing page; host panel removed.
+- admin.html: host desk with answer key, scoring and station URLs.
+- KARJAT_WORKING_QR_CODES.pdf: printable, scannable QR cards.
+- qr_codes/: individual PNG QR images.
+- README.txt: these instructions.
 
-HOSTING (free static hosting):
-1. Create/sign in to a GitHub account.
-2. Create a new public repository named karjat-treasure-hunt.
-3. Upload index.html and README.txt to the repository root.
-4. Open Settings → Pages. Choose Deploy from a branch, branch main, folder /(root), then Save.
-5. Wait for GitHub Pages to publish. The URL should look like:
-   https://YOUR-USERNAME.github.io/karjat-treasure-hunt/
-6. Open the published URL on a phone and test the team buttons, clue cards, hints and final code.
-7. Create QR codes pointing to the published URL plus #red-a, #red-c, #red-e, #red-b, #red-d, #blue-b, #blue-d, #blue-a, #blue-e, #blue-c.
-   IMPORTANT: QR cards need the real published URL; don't print placeholder links.
+Deploy:
+1. Upload/replace index.html in the root of your existing GitHub repository.
+2. Upload admin.html to the same root. It will be available at:
+   https://heymilan.github.io/karjat-treasure-hunt/admin.html
+3. Upload the QR PDF and/or qr_codes folder if you want them available in the repository (optional).
+4. Keep admin.html URL private. This is an unlisted page, not password-protected; anyone who knows the URL can open it.
+5. The static player page contains clue data including digits in its JavaScript, so this is not secure against source inspection.
 
-GAME NOTES:
-- Final code is 47291 (station order A-B-C-D-E).
-- Red route: A → C → E → B → D → final.
-- Blue route: B → D → A → E → C → final.
-- The website is static and has no backend or accounts. Scores are managed by the host. Evidence saving uses local storage on the same phone where supported.
-- Answers are visible in the site's source/host panel, so this is intended for a friendly party, not secure competition.
-- Test the site on the villa Wi-Fi/mobile data before the event. Static pages need internet to load unless saved locally.
+QR links are generated for the currently published site:
+https://heymilan.github.io/karjat-treasure-hunt/
+If your username/repository differs, regenerate QR codes with the correct URL.
+
+Safety: no running, no pool-edge searching, no climbing, no opening private cupboards. Challenges can be completed seated.
